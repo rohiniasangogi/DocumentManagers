@@ -1,0 +1,21 @@
+<div class="container">
+    <form action="" class="form">
+        <span class="top-text">upload file</span>
+        <!-- <label><a>Enter the file name</a></label> -->
+        <input  type="text" placeholder="Name" class="username" name="name" [(ngModel)]="file.name">
+        <input  type="text" placeholder="Doc Name" class="username" (change)="onFileChange($event)" name="docName"[(ngModel)]="file.docName">
+        <select  class="select" name="type"[(ngModel)]="file.type">
+
+            <option>Choose the document type ...</option>
+            <option>Pdf</option>
+            <option>docx</option>
+            <option>xlsx</option>
+            <option>png</option>
+            <option>jpg</option>
+     </select> <br>
+     
+     <input  style="margin-left:20px;" type="file"class="file"  (change)="onFileChange($event)" name="document" [(ngModel)]="file.document" />
+        <input  type="description" placeholder="Doc Des" class="des" name="description" [(ngModel)]="file.description">
+        <button class="upload" type="button" (click)="onsubmit()">upload</button>
+    </form>
+</div>

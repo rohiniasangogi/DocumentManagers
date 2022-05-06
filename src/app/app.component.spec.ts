@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'docmanager'`, () => {
+  it(`should have as title 'documenr_manager'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('docmanager');
+    expect(app.title).toEqual('documenr_manager');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('docmanager app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('documenr_manager app is running!');
   });
 });

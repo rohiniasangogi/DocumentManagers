@@ -1,0 +1,27 @@
+
+.hero{	
+    display:block;
+    width:80%;
+    position: absolute;
+    top: 118px;
+    left: 320px;
+    height:80vh;
+    background-image: url("https://raw.githubusercontent.com/MohamedAridah/frontendmentor_url-shortening-api/main/images/illustration-working.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:80% 440px;
+    opacity: 0.5;
+    
+    }
+    
+    .hero h1{
+     font-family:Myriad Pro;
+     color:#FFF;
+    }
+    .btn.btn-lg {
+  padding: 12px 36px;
+}
